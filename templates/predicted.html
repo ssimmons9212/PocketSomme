@@ -76,7 +76,7 @@
   <div class="container-fluid">
     <div class= "row">
       <div class = "col-3">
-        <div class = "card border-dark bg-transparent mb-3">
+        <div class = "card border-dark bg-light mb-3">
           <div class = "card-header">
             <b>Results</b>
           </div>
@@ -87,21 +87,22 @@
         </div>
       </div>
       <div class = "col-5">
-        <div class="card border-dark bg-transparent mb-3" style="width: 100%;">
+        <div class="card border-dark bg-light mb-3" style="width: 100%;">
           <div class="card-header">
               Ingredients
           </div>
-          <div class = "card-body">
-          <ul class="list-group list-group-flush ">
+          <div class = "card border-dark bg-light mb-3">
+          <ul class="list-group">
+            <!-- list-group-flush  -->
             {% for item in recipeIng %}
-              <li class="list-group-item">{{item}}</li>
+              <li class="list-group">{{item}}</li>
             {% endfor %}
           </ul>
           </div>
         </div>  
       </div>
       <div class = "col-4">
-        <div class = "card border-dark bg-transparent mb-3">
+        <div class = "card border-dark bg-light mb-3">
           <div class = "card-header">
             Nutrition
           </div>
