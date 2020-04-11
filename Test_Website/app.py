@@ -14,7 +14,7 @@ from flask import Flask, jsonify, render_template, request
 import config
 
 app = Flask(__name__, template_folder='templates')
-app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db'
+app.config['JAWSDB_URL'] = f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db'
 
 # reflect an existing database into a new model
 Base = automap_base()
