@@ -19,7 +19,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = (os.environ.get("JAWSDB_URL", "") or f'm
 
 # reflect an existing database into a new model
 Base = automap_base()
-engine = create_engine(os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db')
+engine = create_engine((os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db'))
 # ( os.environ.get("JAWSDB_URL", "") or
 # reflect the tables
 Base.prepare(engine, reflect=True)
