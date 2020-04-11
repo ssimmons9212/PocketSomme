@@ -1,0 +1,252 @@
+/* Getting rid of the default link styles here */
+ body {
+  padding: 0;
+  margin: 0;
+  background: #f6e9e9;
+}
+/*--- navigation bar ---*/
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+}
+
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background: #4e5d6c;
+}
+
+/* The code styles the text at the bottom of the footer */
+.footer > .bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background: #1b3146;
+}
+.navbar {
+  background:#D85A76;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: cursive;
+}
+.nav-link {
+  color: #fff;
+  margin-right: 1em !important;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: cursive;
+}
+.nav-brand:hover {
+  color: #870320;
+}
+.nav-link:hover {
+  color: #870320;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.header {
+  background-image: url('../images/wine_case_2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header-2 {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.container {
+ 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.container-2 {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  margin: 5px;
+  position: relative;
+}
+/*.container-fluid {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  position: relative;*/
+}
+/*.column {
+  background-image: url('C:/Users/samms/Desktop/Test_Website/images/wine_case_2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;*/
+}
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(.3, 0, 0, 0.4);
+}
+.list-group-item{
+  color:#D85A76;
+  background-color: #D85A76;
+}
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 {
+  color: #60A740;
+}
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.description a {
+  border:1px solid #CC0000;
+  background:#D85A76;
+  border-radius: 400px;
+  display: block;
+  margin: 30px;
+  color:#fff;
+}
+.winebuttons a{
+  padding: 200;
+  width: 350px;
+  border: 200px solid #CC0000;
+  background: #D85A76;
+  cursor: pointer;
+}
+.description a:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+.features .form-control,
+.features input {
+    border-radius: 400px;
+}
+.features .btn {
+  background-color: #589b37;
+  border-radius: 400px solid #589b37;
+  color: #CC0000;
+  width: 25px;
+  display: block;
+  margin-top: 20px;
+}
+.features .btn:hover {
+  background-color: #333;
+  border-radius: 200px solid #333;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+       .arc text {
+            font: 12px sans-serif;
+            text-anchor: middle;
+            font-family: "";
+        }
+
+        .arc path {
+            stroke: #fff;
+        }
+
+        .title {
+            fill: teal;
+            font-weight: bold;
+        }
+ .main-head {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.side {
+  grid-area: sidebar;
+}
+.ad {
+  grid-area: ad;
+}
+.main-footer {
+  grid-area: footer;
+  background-color: #D85A76;
+  border-radius: 400px solid #D85A76;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  text {
+  font: 15px sans-serif;
+  font-weight: bold;
+}
+circle {
+    stroke: #565352;
+    stroke-width: 1;
+}
+.box {
+    min-height: 50px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 1000;
+    color: #FFF;
+  }
+  
+  .pink {
+    background: hotpink;
+  }

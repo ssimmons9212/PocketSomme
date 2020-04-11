@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PocketSom Wines Page</title>
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/main.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/main.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- <script src="../static/JS/main.js"></script> -->
+  <script src="{{ url_for('static', filename='JS/main.js')}}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="index.html">PocketSomm</a>
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a  class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a  class="nav-link" href="/predict" href="#">Wine Predictor</a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" href="/wine_map">Wine Regions Map</a>
+      </li>
+      <li class="nav-item">
+          <a href="/analytics" class="nav-link" href="#">Wine Analytics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<header class="page-header header container-fluid">
+	<div class="overlay"></div>
+	<div class="description">
+    <div class="row">
+  	<div class="column">
+
+      <div>
+      	<a class="btn btn-primary btn-lg" href="/cabsauv" role="button">Cabernet Sauvignon</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/malbec" role="button">Malbec</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/merlot" role="button">Merlot</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/syrah" role="button">Syrah</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/pinotnoir" role="button">Pinot Noir</a></div>
+  	</div>
+
+  <div class="column">
+  	<div>
+      	<a class="btn btn-primary btn-lg" href="/sauvblanc" role="button">Sauvignon Blanc</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/chard" role="button">Chardonnay</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/gerwurtz" role="button">Gerwurtzraminer</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/chenblan" role="button">Chenin Blanc</a></div>
+      	<div>
+      	<a class="btn btn-primary btn-lg" href="/reisling" role="button">Reisling</a></div>
+      	
+    </div>
+    	
+
+    </div>
+	</header>
+</body>
+</html>
+

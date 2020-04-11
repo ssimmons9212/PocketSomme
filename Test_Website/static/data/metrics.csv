@@ -1,0 +1,13 @@
+beverage,BODY,RED_FRUIT,CITRUS_FRUIT,STONE_FRUIT,BLACK_FRUIT,FLORAL,Minerality,HERBACIOUS,PEPPER,EARTH,BAKING_SPICE,LEATHER,Astringent,Ph,ABV,Dryness
+Cabernet Sauvignon,5,3,0,0,5,2,0,4,3,3,5,3,4,3,4,2
+Pinot Noir,3,5,0,0,0,5,0,3,0,4,3,1,2,4,3,2
+Syrah,5,0,0,0,5,3,0,4,5,3,4,3,3,3,4,2
+Sangiovese,4,5,0,0,3,0,0,4,4,3,2,5,4,4,4,1
+Merlot,4,5,0,0,3,3,0,2,1,3,5,2,2,3,4,1
+Malbec,5,2,0,0,5,3,0,2,2,3,4,0,2,2,3,2
+Sauvignon Blanc,2,0,4,0,0,3,4,5,0,0,0,0,0,5,3,2
+Chardonnay,3,0,4,5,0,2,3,0,0,0,0,0,0,3,4,2
+Chenin Blanc,2,0,2,5,0,2,3,0,0,0,0,0,0,5,3,2
+Reisling,1,0,5,4,0,3,3,1,0,0,0,0,0,5,1,3
+Gewürztraminer,3,0,1,3,0,5,1,0,0,0,0,0,0,1,4,3
+
