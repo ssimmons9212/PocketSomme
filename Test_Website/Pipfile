@@ -14,6 +14,7 @@ requests = "*"
 beautifulsoup4 = "*"
 sklearn = "*"
 scikit-learn = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
