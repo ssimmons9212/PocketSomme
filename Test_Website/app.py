@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy import Table
 from sqlalchemy import Column, Integer, Text
 import csv
+import os
 from recipe_scraper import nutr_scrape, recipe_info
 from predictFlask import ColorPredict
 import requests
@@ -14,11 +15,11 @@ from flask import Flask, jsonify, render_template, request
 import config
 
 app = Flask(__name__, template_folder='templates')
-app.config['JAWSDB_URL'] = f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = ( os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db')
 
 # reflect an existing database into a new model
 Base = automap_base()
-engine = create_engine(f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db')
+engine = create_engine(( os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db'))
 
 # reflect the tables
 Base.prepare(engine, reflect=True)
