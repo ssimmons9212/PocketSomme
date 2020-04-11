@@ -15,12 +15,12 @@ from flask import Flask, jsonify, render_template, request
 import config
 
 app = Flask(__name__, template_folder='templates')
-app.config['SQLALCHEMY_DATABASE_URI'] = ( os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db')
+app.config['SQLALCHEMY_DATABASE_URI'] = (os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db')
 
 # reflect an existing database into a new model
 Base = automap_base()
-engine = create_engine(( os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db'))
-
+engine = create_engine(os.environ.get("JAWSDB_URL", "") or f'mysql+pymysql://root:{config.pw}@127.0.0.1:3306/wine_db')
+# ( os.environ.get("JAWSDB_URL", "") or
 # reflect the tables
 Base.prepare(engine, reflect=True)
 # matching that of the table name.
@@ -58,20 +58,20 @@ session = Session(engine)
 
 
 class MyClass(Base):
-    __table__ = Table('wine', Base.metadata,
+    __table__ = Table('wine_new', Base.metadata,
   
     Column('browser',Text), 
-    Column('Cab Sauv', Integer), 
-    Column('Pinot Noir', Integer), 
-    Column('Syrah', Integer),
-    Column('Sangiovese', Integer), 
-    Column('Merlot'),
-    Column('Malbec', Integer), 
-    Column('Sauv Blanc'),
-    Column('Chard', Integer),
-    Column('Chenin Nlanc', Integer),
-    Column('Reisling', Integer),
-    Column('Gerwurtzraminer', Integer), 
+    Column('cabsauv', Integer), 
+    Column('pinotnoir', Integer), 
+    Column('syrah', Integer),
+    Column('sangiovese', Integer), 
+    Column('merlot'),
+    Column('malbec', Integer), 
+    Column('sauvblanc'),
+    Column('chard', Integer),
+    Column('cheninblanc', Integer),
+    Column('reisling', Integer),
+    Column('gerwurtzraminer', Integer), 
     extend_existing=True, autoload=True, autoload_with = engine
     )
 
