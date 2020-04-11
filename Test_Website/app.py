@@ -61,17 +61,17 @@ class MyClass(Base):
     __table__ = Table('wine', Base.metadata,
   
     Column('browser',Text), 
-    Column('cabsauv', Integer), 
-    Column('pinotnoir', Integer), 
-    Column('syrah', Integer),
-    Column('sangiovese', Integer), 
-    Column('merlot'),
-    Column('malbec', Integer), 
-    Column('sauvblanc'),
-    Column('chard', Integer),
-    Column('cheninblanc', Integer),
-    Column('reisling', Integer),
-    Column('gerwurtzraminer', Integer), 
+    Column('Cab Sauv', Integer), 
+    Column('Pinot Noir', Integer), 
+    Column('Syrah', Integer),
+    Column('Sangiovese', Integer), 
+    Column('Merlot'),
+    Column('Malbec', Integer), 
+    Column('Sauv Blanc'),
+    Column('Chard', Integer),
+    Column('Chenin Nlanc', Integer),
+    Column('Reisling', Integer),
+    Column('Gerwurtzraminer', Integer), 
     extend_existing=True, autoload=True, autoload_with = engine
     )
 
